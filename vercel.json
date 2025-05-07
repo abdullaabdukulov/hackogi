@@ -1,6 +1,13 @@
 {
   "builds": [
     {
+      "src": "vercel.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles"
+      }
+    },
+    {
       "src": "hackogi/wsgi.py",
       "use": "@vercel/python",
       "config": {
