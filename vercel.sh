@@ -3,12 +3,12 @@ echo "Installing dependencies..."
 pip install -r requirements.txt
 
 echo "Collecting static files..."
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
 
 echo "Running makemigrations..."
-python manage.py makemigrations
+python3 manage.py makemigrations
 
 echo "Running migrations..."
-python manage.py migrate
+python3 manage.py migrate
 
 echo "Build completed successfully!"
